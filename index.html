@@ -8,44 +8,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">Scaler Esports</div>
+    <div class="background-shapes">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="hexagon"></div>
+    </div>
+
+    <nav class="glass">
+        <div class="logo"><i class="fas fa-gamepad"></i> Scaler Esports</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#teams">Teams</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#scoreboard">Scoreboard</a></li>
-            <li><a href="history/completed.html">History</a></li>
+            <li><a href="./Teams/teams.html">Teams</a></li>
+            <li><a href="./events/events.html">Events</a></li>
+            
+            <li><a href="./history/completed.html">History</a></li>
+            <li><a href="./login/login.html">Profile</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
-        <h1>Welcome to Scaler Esports</h1>
-        <p>Your gateway to competitive gaming excellence</p>
-        <button class="cta-button">Register Team</button>
+    <header class="hero glass">
+        <div class="hero-content">
+            <h1><span class="highlight">Welcome to</span><br>Scaler Esports</h1>
+            <p class="subtitle">Your gateway to competitive gaming excellence</p>
+            <button class="cta-button glass-button" href="./events/events.html">
+                <span class="button-content">
+                    <i class="fas fa-rocket"></i>
+                    Register Team
+                </span>
+            </button>
+        </div>
+        <div class="hero-overlay"></div>
     </header>
 
-    <section id="events">
-        <h2>Upcoming Events</h2>
-        <div class="event-grid">
-            <div class="event-card">
-                <img src="https://placeholder.com/300x200" alt="Event 1">
-                <h3>Valorant Tournament</h3>
-                <p>Date: March 15, 2025</p>
-                <button>Register Now</button>
-            </div>
-            <!-- More event cards -->
-        </div>
-    </section>
-
-    <section id="scoreboard">
-        <h2>Live Scoreboard</h2>
+    <section id="scoreboard" class="glass">
+        <h2><i class="fas fa-trophy"></i> Live Scoreboard</h2>
         <div class="score-container">
             <!-- Scores will be dynamically added here -->
         </div>
     </section>
 
-    <footer>
+    <footer class="glass">
         <p>&copy; 2025 Scaler Esports. All rights reserved.</p>
     </footer>
 

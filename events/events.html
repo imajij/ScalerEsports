@@ -5,61 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events - Scaler Esports</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="events.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="../assets/images/logo.png" alt="Scaler Esports">
-        </div>
+    <div class="background-shapes">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="hexagon"></div>
+    </div>
+
+    <nav class="glass">
+        <div class="logo"><i class="fas fa-gamepad"></i> Scaler Esports</div>
         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="../tournament/tournaments.html">Tournaments</a></li>
             <li><a href="../teams/teams.html">Teams</a></li>
             <li><a href="../leaderboard/leaderboard.html">Leaderboard</a></li>
         </ul>
     </nav>
 
     <main class="events-page">
-        <section class="events-header">
-            <h1>Upcoming Events</h1>
-            <div class="filters">
-                <select id="gameFilter">
-                    <option value="all">All Games</option>
-                    <option value="valorant">Valorant</option>
-                    <option value="cs2">CS2</option>
-                </select>
+        <section id="live-events" class="events-section glass">
+            <div class="section-header">
+                <h2><i class="fas fa-broadcast-tower"></i> Live Events</h2>
+                <div class="filters">
+                    <select id="liveGameFilter" class="glass-select">
+                        <option value="all">All Games</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="cs2">CS2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="events-container live-events-container">
+                <!-- Live events will be dynamically inserted here -->
             </div>
         </section>
 
-        <section class="events-container">
-            <!-- Event cards will be dynamically inserted here -->
+        <section id="upcoming-events" class="events-section glass">
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-alt"></i> Upcoming Events</h2>
+                <div class="filters">
+                    <select id="upcomingGameFilter" class="glass-select">
+                        <option value="all">All Games</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="cs2">CS2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="events-container upcoming-events-container">
+                <!-- Upcoming events will be dynamically inserted here -->
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="glass">
         <div class="footer-content">
-            <div class="footer-logo">
-                <img src="../assets/images/logo.png" alt="Scaler Esports">
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="../about.html">About Us</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                    <li><a href="../privacy.html">Privacy Policy</a></li>
-                </ul>
-            </div>
             <div class="social-links">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <a href="#" class="glass-button"><i class="fab fa-discord"></i></a>
+                <a href="#" class="glass-button"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="glass-button"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -67,6 +73,6 @@
         </div>
     </footer>
 
-    <script src="../assets/js/events.js"></script>
+    <script src="events.js"></script>
 </body>
 </html>
