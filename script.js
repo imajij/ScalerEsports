@@ -36,5 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // Form handling for team registration
 document.querySelector('.cta-button').addEventListener('click', () => {
     // Add your team registration logic here
-    alert('Team registration coming soon!');
+    window.location.href = "./Teams/teams.html";
 });
