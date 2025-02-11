@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Scaler Esports</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="hexagon"></div>
+    </div>
+
+    <nav class="glass">
+        <div class="logo"><i class="fas fa-gamepad"></i> Scaler Esports</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../teams/teams.html">Teams</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="../history/completed.html">History</a></li>
+            <li><a href="../login/login.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="events-page">
+        <section id="live-events" class="events-section glass">
+            <div class="section-header">
+                <h2><i class="fas fa-broadcast-tower"></i> Live Events</h2>
+                <div class="filters">
+                    <select id="liveGameFilter" class="glass-select">
+                        <option value="all">All Games</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="cs2">CS2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="events-container live-events-container">
+                <!-- Live events will be dynamically inserted here -->
+            </div>
+            <div class="view-more-container">
+                <a href="../events/Live/live.html" class="glass-button view-more-btn">
+                    <span>View More Live Events</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="upcoming-events" class="events-section glass">
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-alt"></i> Upcoming Events</h2>
+                <div class="filters">
+                    <select id="upcomingGameFilter" class="glass-select">
+                        <option value="all">All Games</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="cs2">CS2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="events-container upcoming-events-container">
+                <!-- Upcoming events will be dynamically inserted here -->
+            </div>
+            <div class="view-more-container">
+                <a href="../events/Upcoming/upcoming.html" class="glass-button view-more-btn">
+                    <span>View More Upcoming Events</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="glass-button"><i class="fab fa-discord"></i></a>
+                <a href="#" class="glass-button"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="glass-button"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Scaler Esports. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="events.js"></script>
+</body>
+</html>
