@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Scaler Esports</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="hexagon"></div>
+    </div>
+
+    <nav class="glass">
+        <div class="logo"><i class="fas fa-gamepad"></i> Scaler Esports</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../events/events.html">Events</a></li>
+            <li><a href="../teams/teams.html">Teams</a></li>
+            <li><a href="login.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="profile-container">
+        <section class="profile-header glass">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="../assets/default-avatar.png" alt="Profile Avatar">
+                </div>
+                <div class="profile-details">
+                    <h1>Player Profile</h1>
+                    <p class="player-tag">@playername</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="profile-grid">
+            <section class="personal-info glass">
+                <h2><i class="fas fa-user"></i> Personal Information</h2>
+                <form class="profile-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="glass-input" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="glass-input" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" class="glass-input" placeholder="Enter your mobile number">
+                    </div>
+                    <button type="submit" class="glass-button">
+                        <i class="fas fa-save"></i> Save Changes
+                    </button>
+                </form>
+            </section>
+
+            <section class="recent-matches glass">
+                <h2><i class="fas fa-trophy"></i> Recent Matches</h2>
+                <div class="matches-list">
+                    <div class="match-card">
+                        <div class="match-header">
+                            <span class="game-type">Valorant</span>
+                            <span class="match-date">Today</span>
+                        </div>
+                        <div class="match-result win">
+                            <span class="score">13 - 7</span>
+                            <span class="result-tag">VICTORY</span>
+                        </div>
+                        <div class="match-stats">
+                            <span>KDA: 25/12/8</span>
+                            <span>MVP</span>
+                        </div>
+                    </div>
+                    <!-- More match cards can be added here -->
+                </div>
+            </section>
+
+            <section class="stats-overview glass">
+                <h2><i class="fas fa-chart-bar"></i> Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Win Rate</h3>
+                        <p class="stat-value">65%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Matches</h3>
+                        <p class="stat-value">156</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>MVP Count</h3>
+                        <p class="stat-value">23</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="glass">
+        <p>&copy; 2025 Scaler Esports. All rights reserved.</p>
+    </footer>
+</body>
+</html>
